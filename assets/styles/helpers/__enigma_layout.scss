@@ -1,0 +1,11 @@
+.enigma {
+    height: 100vh;
+    background : $gradient;
+    display: flex;
+    align-items: center;
+
+    #illu {
+        width: 600px;
+        height: 100%;
+    }
+}

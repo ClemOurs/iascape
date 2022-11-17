@@ -1,0 +1,51 @@
+.learnMore {
+    height: 100vh;
+    background : $gradient;
+    display: flex;
+    flex-direction: column;
+    &-header {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h1 {
+            color: $secondary;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p{
+            width: 70%;
+            text-justify: justify;
+            font-size: 1.3em;
+            line-height: 25px;
+            font-weight: 300;
+            color:$white;
+        }
+    }
+    h4 {
+        font-size: 1.5em;
+        color:$secondary;
+    }
+    &-content {
+        display: flex;
+        flex-direction: row;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 30%;
+        color: $white;
+        span {
+            &::before {
+                content: '';
+                width: 5px;
+                height: 5px;
+                background-color: $secondary;
+            }
+        }
+
+        p {
+            color: $grey;
+        }
+    }
+}

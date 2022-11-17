@@ -1,0 +1,39 @@
+.button {
+    position: relative;
+    padding: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .15s ease;
+    border: 1px solid $secondary;
+    border-radius: 5px;
+}
+
+.buttonInside {
+    position: relative;
+    display: block;
+    padding: 0.8em 1.2em;
+    color: $white;
+    background-color: $secondary;
+    overflow: hidden;
+    transition: all .5s ease;
+    &:hover {
+        background-color: #D2D2D2;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0;
+        width: 6px;
+        height: 6px;
+        background-color: $black;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0; bottom: 0;
+        width: 0; 
+        height: 0; 
+        border-left: 6px solid transparent;
+        border-bottom: 6px solid $black;
+    }
+}

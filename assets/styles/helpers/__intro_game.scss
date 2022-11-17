@@ -1,0 +1,65 @@
+.introGame {
+    height: 100%;
+    background : $gradient;
+    display: flex;
+    align-items: center;
+    &-content {
+        width: 90%;
+        height: 95%;
+        margin: 0 auto;
+        background-image: url('~/assets/grid.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: $white;
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            position: absolute;
+            top: 16%;
+            left: 7%;
+            width: 60%;
+            h1 {
+                color: $secondary;
+                font-size: 3em;
+                margin-bottom: 10px;
+            }
+            p {
+                width: 70%;
+                text-align: justify;
+                font-size: 1.3em;
+                line-height: 25px;
+                font-weight: 300;
+            }
+            .video {
+                padding: 0;
+                width: 100%;
+                &-content {
+                    height:  400px;
+                    &::before {
+                        width: 20px;
+                        height: 20px;
+                        background-color: $black;
+                    }
+                    &::after {
+                        border-left: 20px solid transparent;
+                        border-bottom: 20px solid $black;
+                    }
+                }
+                &-border {
+                    border-color: $primary;
+                }
+            }
+        }
+        .button {
+            position:absolute;
+            bottom: 20%;
+            right: 10%;
+            border-color: $white;
+            &Inside {
+                background-color: $secondary;
+            }
+        }
+    }
+}
