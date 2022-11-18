@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <TheButton text="commencer" />
+        <TheButton text="commencer" link="/game/" />
         <div class="copyrights">
             <img src="~/assets/logo.svg" alt="logo marque">
             <p>© 2022 IASCAPE est un projet scolaire réalisé par des étudiants de l’école Institut de l’Internet et du Multimédia du Pôle Léonard de Vinci.</p>

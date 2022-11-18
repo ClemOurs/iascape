@@ -10,7 +10,7 @@
                     </div>
                 </section>
             </article>
-            <TheButton text="continuer" />
+            <TheButton text="continuer" link="/game/hub" />
         </div>
     </div>
 </template>

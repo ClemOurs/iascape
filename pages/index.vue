@@ -3,7 +3,9 @@
     <section class="hero">
       <img src="~/assets/logo.svg" alt="logo">
       <p>Plongez vous dans le nouvel escape game. Combattez une intelligence artificielle malefique et resolvez ses enigmes les plus complexes pour liberer l’ecole des entraves de cette IA.</p>
-      <TheButton text="commencer" />
+      <TheButton text="commencer" 
+                link="/game" 
+      />
     </section>
     <section class="findMore">
       <div class="findMore-header">
@@ -22,7 +24,7 @@
       <div class="discover-content">
         <h3>Découvrez l’IASCAPE avant de commencer</h3>
         <p>Apprenez a connaitre Medusa, l’intelligence artificielle malefique pour dejouer ses tours et vous preparer a l’escape game.</p>
-        <TheButton text="découvrir" />
+        <TheButton text="découvrir" link="/game/introduction" />
       </div>
       <div></div>
     </section>
@@ -42,7 +44,7 @@
       <div class="medusa-content">
         <h3>Medusa, l’intelligence artificielle malefique</h3>
         <p>Apprenez a connaitre Medusa, l’intelligence artificielle malefique pour dejouer ses tours et vous preparer a l’escape game.</p>
-        <TheButton text="commencer" />
+        <TheButton text="commencer" link="/game/introduction" />
       </div>
     </section>
     <section class="video">
