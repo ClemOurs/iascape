@@ -1,8 +1,6 @@
 .learnMore {
     height: 100vh;
     background : $gradient;
-    display: flex;
-    flex-direction: column;
     &-header {
         display: flex;
         flex-direction: column;
@@ -13,7 +11,7 @@
             margin-bottom: 10px;
         }
         p{
-            width: 70%;
+            width: 40%;
             text-justify: justify;
             font-size: 1.3em;
             line-height: 25px;
@@ -25,27 +23,60 @@
         font-size: 1.5em;
         color:$secondary;
     }
+    &-grid {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        background-image: url('~/assets/grid.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &-container {
+        height: 100%;
+        position: relative;
+        top: 16%;
+        left: 7%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .button {
+            position: absolute;
+            bottom: 30%;
+            right: 20%;
+        }
+    }
     &-content {
         display: flex;
         flex-direction: row;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 30%;
-        color: $white;
-        span {
-            &::before {
-                content: '';
-                width: 5px;
-                height: 5px;
-                background-color: $secondary;
-            }
-        }
+        gap: 30px;
 
-        p {
-            color: $grey;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 30%;
+            color: $white;
+            h5 {
+                font-size: 2em;
+            }
+            span {
+                font-size: 1.3em;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 10px;
+                    background-color: $secondary;
+                }
+            }
+    
+            p {
+                color: #E0E0E0;
+                font-size: 1.5em;
+            }
         }
     }
 }

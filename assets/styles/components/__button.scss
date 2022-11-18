@@ -6,6 +6,9 @@
     transition: all .15s ease;
     border: 1px solid $secondary;
     border-radius: 5px;
+    &Content {
+        color: $black;
+    }
 }
 
 .buttonInside {
